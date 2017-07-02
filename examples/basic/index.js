@@ -51,9 +51,9 @@ const TabsDemo1 = () => (
 const TabsDemo2 = () => (
   <Tabs className="theme-box" settings={{index: 2, autoWrap: true}}>
     <Nav className="your-class" role="tablist">
-      <div role="tab">First</div>
-      <div role="tab">Second</div>
-      <div role="tab">Third</div>
+      <div role="tab">First Section</div>
+      <div role="tab">Second Section</div>
+      <div role="tab">Third Section</div>
     </Nav>
     <Content>
       <div>An office worker android arrives at a base station to do computer work. As he attempts to make friends  with people in the office workplace, he is rejected and shunned because he is a robot. </div>
@@ -74,17 +74,19 @@ const TabsDemo3 = () => (
       <div role="tab">Mercury</div>
       <div>Venus</div>
       <div>Earth</div>
+      <div>Jupiter</div>
     </Nav>
     <Content>
       <div>First pane content paragraph placeholder box of text</div>
       <div className="your-class">Second pane content is a paragraph type of placeholder container</div>
       <div>Third pane content paragraph placeholder area</div>
+      <div>Jupiter is the fifth planet from the Sun and the largest in the Solar System</div>
     </Content>
   </Tabs>);
 
 
 const TabsDemo4 = () => (
-  <Tabs className="theme-folder" settings={{bgColor: '#e0e6a4'}}>
+  <Tabs className="theme-folder" settings={{bgColor: 'lightPink', color: '#333'}}>
     <Nav className="your-class" role="tablist">
       <div role="tab"><img src={check} alt="check" className="tab-icon"/>First Tab</div>
       <div><img src={check} alt="check" className="tab-icon"/>Second Tab</div>
@@ -92,7 +94,7 @@ const TabsDemo4 = () => (
       <div><img src={check} alt="check" className="tab-icon"/>Fourth Tab</div>
     </Nav>
     <Content>
-      <div><p>To him it seemed, by comparison with his heartbeat, that the chandelier took the same amount of time to swing back and forth, no matter how far it was swinging. When he returned home, he set up two pendulums of equal length and swung one with a large sweep and the other with a small sweep and found that they kept time together. It was not until the work of Christiaan Huygens, almost one hundred years later</p></div>
+      <div><p>That the chandelier took the same amount of time to swing back and forth, no matter how far it was swinging. When he returned home, he set up two pendulums of equal length and swung one with a large sweep and the other with a small sweep and found that they kept time together. It was not until the work of Christiaan Huygens, almost one hundred years later</p></div>
       <div><p>To him it seemed, by comparison with his heartbeat, that the chandelier took the same amount of time to swing back and forth, no matter how far it was swinging. When he returned home, he set up two pendulums of equal length and swung one with a large sweep and the other with a small sweep and found that they kept time together. It was not until the work of Christiaan Huygens, almost one hundred years later</p></div>
       <div><p>Panel content goes To him it seemed, by comparison with his heartbeat, that the chandelier took the same amount of time to swing back and forth, no matter how far it was swinging. When he returned home, he set up two pendulums of equal length and swung one with a large sweep and the other with a small sweep and found that they kept time together. It was not until the work of Christiaan Huygens, almost one hundred years laterhere... #2</p></div>
       <div><p>Panel content goes here.To him it seemed, by comparison with his heartbeat, that the chandelier took the same amount of time to swing back and forth, no matter how far it was swinging. When he returned home, he set up two pendulums of equal length and swung one with a large sweep and the other with a small sweep and found that they kept time together. It was not until the work of Christiaan Huygens, almost one hundred years later.. #3</p></div>
