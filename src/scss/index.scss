@@ -5,23 +5,37 @@
   color: #444;
 
   .wrapper {
-    &.auto-wrap {
+    /* contain the panel to the size of the nav */
+    &.content-wrap {
       display: table;
+      .tab-nav {
+        white-space: nowrap;
+        display: table-caption;
+        caption-side: top;
+
+        .tab-nav-item {
+          display: inline-table;
+        }
+      }
+      .tab-panel {
+        display: table-caption;
+        caption-side: bottom;
+      }
+    }
+
+    &.bottom-nav {
+      .tab-nav {
+        caption-side: bottom;
+      }
+      .tab-panel {
+        caption-side: top;
+      }
     }
   }
 
   .tab-nav {
     position: relative;
     top: 1px;
-    &.auto-wrap {
-      white-space: nowrap;
-      display: table-caption;
-      caption-side: top;
-
-      .tab-nav-item {
-        display: inline-table;
-      }
-    }
   }
 
   .tab-nav-item {
@@ -43,9 +57,24 @@
 
   .tab-panel {
     border-top: 1px solid #BBB;
-    &.auto-wrap {
-      display: table-caption;
-      caption-side: bottom;
+  }
+
+  .bottom-nav {
+    .tab-nav-item {
+      &.active {
+        border-radius: 0 0 5px 5px;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid #BBB;
+      }
+    }
+
+    .tab-panel {
+      border-top: none;
+      border-bottom: 1px solid #BBB;
+    }
+
+    .tab-nav {
+      top: -1px;
     }
   }
 
@@ -113,6 +142,25 @@ $theme1: #AAA;
       }
     }
   }
+
+  &.bottom-nav>.tab-nav  {
+    top: 0;
+    .tab-nav-item {
+      &.active {
+        border-radius: 0 0 5px 5px;
+      }
+    }
+  }
+
+  &.bottom-nav>.tab-panel  {
+    .tab-panel-item {
+      &.active {
+        border-radius: 5px 5px 0 0;
+      }
+    }
+  }
+
+
 }
 
 /* Theme box */

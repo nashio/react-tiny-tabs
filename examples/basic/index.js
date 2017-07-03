@@ -47,9 +47,9 @@ const TabsDemo1 = () => (
 
 
 // Tabs inside of Tabs
-// AutoWrap sets the content of the same size of the tabs
+// contentWrap sets the content of the same size of the tabs
 const TabsDemo2 = () => (
-  <Tabs className="theme-box" settings={{index: 2, autoWrap: true}}>
+  <Tabs className="theme-box" settings={{index: 2, contentWrap: true}}>
     <Nav className="your-class" role="tablist">
       <div role="tab">First Section</div>
       <div role="tab">Second Section</div>
@@ -68,7 +68,7 @@ const TabsDemo2 = () => (
 // attributes get inherited
 const TabsDemo3 = () => (
   <Tabs className="theme-folder" settings={{
-    index: 2, autoWrap: true, bgColor: 'salmon', color: 'black'
+    index: 2, contentAligned: true, bgColor: 'salmon', color: 'black'
   }}>
     <Nav className="your-class" role="tablist">
       <div role="tab">Mercury</div>
@@ -103,7 +103,7 @@ const TabsDemo4 = () => (
 
 // attributes get inherited
 const TabsDemo5 = () => (
-  <Tabs className="theme-two-rows" settings={{autoWrap: true}}>
+  <Tabs className="theme-two-rows" settings={{contentWrap: true}}>
     <Nav>
       <div><span>Planet Mercury</span><sub>smallest planet</sub></div>
       <div><span>Planet Venus</span><sub>hottest planet</sub></div>
@@ -118,18 +118,54 @@ const TabsDemo5 = () => (
     </Content>
   </Tabs>);
 
+// bottom nav
+const TabsDemo6 = () => (
+  <Tabs className="theme-folder" settings={{
+    contentWrap: true, bgColor: 'black', color: 'white', bottomNav: true
+  }}>
+    <Nav className="your-class" role="tablist">
+      <div role="tab">Mercury</div>
+      <div>Venus</div>
+      <div>Earth</div>
+      <div>Jupiter</div>
+    </Nav>
+    <Content>
+      <div>
+        <img src="assets/img/planets/mercury.jpg" alt="mercury" />
+        <p>First pane content paragraph placeholder box of text</p></div>
+      <div className="your-class">
+        <img src="assets/img/planets/venus.jpg" alt="venus" />
+        <p>Second pane content is a paragraph type of placeholder container</p></div>
+      <div>
+        <img src="assets/img/planets/earth.jpg" alt="earth" />
+        <p>Third pane content paragraph placeholder area</p></div>
+      <div>
+        <img src="assets/img/planets/jupiter.jpg" alt="jupiter" />
+        <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System</p></div>
+    </Content>
+  </Tabs>);
+
 
 ReactDOM.render(
   <div>
     <p className="intro">Customize color and background for active tab. Specify flexible width or auto match the tab's width header. Nest tabs inside other tabs. Define speed of transition</p>
-    <h3><i>default theme</i></h3>
+    <h3>Default Theme</h3>
+    <h4>default theme</h4>
     <TabsDemo1 />
-    <h3><i>.folder--theme</i></h3>
+    <h3>Use alternate themes to customize skin</h3>
+    <h4><span>.folder-theme</span></h4>
     <TabsDemo4 />
-    <h3><i>.two-rows-theme</i></h3>
+    <h3>Title and subtitle </h3>
+    <h4><span>.two-rows-theme</span></h4>
+    <h4><span>{'{contentWrap: true}'}</span> wraps the content to the size of the nav</h4>
     <TabsDemo5 />
-    <h3><i>.box-theme</i></h3>
+    <h3>Nest tab components</h3>
+    <h4><span>.box-theme</span></h4>
     <TabsDemo2 />
+    <h3>Bottom Navigation</h3>
+    <h4><span>{'{bottomNav: true}'}</span></h4>
+    <TabsDemo6 />
+    <div className="footer"></div>
   </div>,
   document.getElementById('root')
 );
