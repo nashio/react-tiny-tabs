@@ -2,11 +2,11 @@
 
 Easy to use React tab component that lets you:
 * Choose from 3 themes
-* Customize colors for text and background
 * Use double lines in the title
-* Constrain content to match the nav width
-* Nest tab components inside other tabs components
 * Define transition speed or use the navigation in the bottom
+* Nest tab components inside other tabs components
+* Constrain content to match the nav width
+* Customize colors for text and background
 
 
 See the live [DEMO:](nashio.github.com/tiny-tabs)
@@ -14,6 +14,8 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
 ### Usage
 
 ```
+  import {Tabs, Nav, Content} from 'react-tiny-tabs';
+  ...
   <Tabs settings={bgColor: royalBlue, color: white}>
     <Nav>
       <div>First Tab</div>
