@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './scss/index.scss';
-const BITS = 10;
+
 const DEFAULTS  = {
   index: 0,
   mainClass: 'tabs-container',

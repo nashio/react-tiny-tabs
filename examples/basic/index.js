@@ -14,6 +14,8 @@ const settings = {
 };
 
 /* Examples */
+
+// default theme, fade between tabs
 const TabsDemo1 = () => (
   <Tabs settings={{...settings, ...{fadeTime: 250}}}>
     <Nav>
@@ -62,7 +64,7 @@ const TabsDemo2 = () => (
     </Content>
   </Tabs>);
 
-// attributes get inherited
+// attributes get inherited, for ex. role="tab" carries through the generated markup
 const TabsDemo3 = () => (
   <Tabs className="theme-folder" settings={{
     index: 2, contentAligned: true, bgColor: 'salmon', color: 'black'
@@ -82,6 +84,7 @@ const TabsDemo3 = () => (
   </Tabs>);
 
 
+// Colors demo, and folder-theme demo
 const TabsDemo4 = () => (
   <Tabs className="theme-folder" settings={{bgColor: 'lightPink', color: '#333'}}>
     <Nav className="your-class" role="tablist">
@@ -98,7 +101,7 @@ const TabsDemo4 = () => (
     </Content>
   </Tabs>);
 
-// attributes get inherited
+// Double line in the title demo
 const TabsDemo5 = () => (
   <Tabs className="theme-two-rows" settings={{contentWrap: true}}>
     <Nav>
@@ -115,7 +118,7 @@ const TabsDemo5 = () => (
     </Content>
   </Tabs>);
 
-// bottom nav
+// Using the tab navigation in the bottom
 const TabsDemo6 = () => (
   <Tabs className="theme-folder" settings={{
     contentWrap: true, bgColor: 'black', color: 'white', bottomNav: true
@@ -145,22 +148,24 @@ const TabsDemo6 = () => (
 
 ReactDOM.render(
   <div>
-    <p className="intro">Customize color and background for active tab. Specify flexible width or auto match the tab's width header. Nest tabs inside other tabs. Define speed of transition</p>
+    <p className="intro">Easy to use React tab component that lets you choose from 3 themes, customize colors for text and background, use double lines in the title, wrap bottom content to match the nav width, nest tabs inside other tabs, define transition speed or use the navigation in the bottom</p>
     <h3>Default Theme</h3>
-    <h4>default theme</h4>
+    <h4><span>settings: {'{fadeTime: 250, index: 0}'}</span></h4>
     <TabsDemo1 />
     <h3>Use alternate themes to customize skin</h3>
-    <h4><span>.folder-theme</span></h4>
+    <h4><span>class="folder-theme"</span></h4>
+    <h4><span>settings: {'{index: 0, bgColor: \'lightPink\', color: \'#333\'}'}</span></h4>
     <TabsDemo4 />
     <h3>Title and subtitle </h3>
-    <h4><span>.two-rows-theme</span></h4>
-    <h4><span>{'{contentWrap: true}'}</span> wraps the content to the size of the nav</h4>
+    <h4><span>class="two-rows-theme"</span></h4>
+    <h4><span>settings: {'{contentWrap: true}'} // Wrap content to nav width</span></h4>
     <TabsDemo5 />
     <h3>Nest tab components</h3>
-    <h4><span>.box-theme</span></h4>
+    <h4><span>class="box-theme"</span></h4>
+    <h4><span>settings: {'{index: 2, contentWrap: true}'}</span></h4>
     <TabsDemo2 />
     <h3>Bottom Navigation</h3>
-    <h4><span>{'{bottomNav: true}'}</span></h4>
+    <h4><span>{'{bottomNav: true, bgColor: \'black\', color: \'white\', contentWrap: true}'}</span></h4>
     <TabsDemo6 />
     <div className="footer"></div>
   </div>,
