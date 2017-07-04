@@ -10,15 +10,12 @@ import greatTit from './assets/img/great-tit.svg';
 
 // override settings
 const settings = {
-  index: 0,
-  tabSeparation: 0,
-  transitionSpeed: 100,
-  selectedPop: false
+  index: 0
 };
 
 /* Examples */
 const TabsDemo1 = () => (
-  <Tabs settings={settings}>
+  <Tabs settings={{...settings, ...{fadeTime: 250}}}>
     <Nav>
       <div>Cardinal</div>
       <div>Tufted Titmouse</div>

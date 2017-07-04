@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './scss/index.scss';
-
+const BITS = 10;
 const DEFAULTS  = {
   index: 0,
   mainClass: 'tabs-container',
@@ -15,21 +15,44 @@ const withTabs = (TabsWrapper, settings) => {
     constructor(props) {
       super(props);
       this.state = {
-        index: settings.index
+        index: settings.index,
+        fade: true,
+        switchDone: true,
+        prevIdx: settings.index
       };
-      this.settings = settings;
       this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(index) {
-      this.setState({ index });
+    switchTo(idx) {
+      this.setState({
+        index: idx,
+        switchDone: false,
+        fade: false
+      });
     }
 
+    handleClick(index) {
+      if (this.transition) return;
+      this.transition = true;
+      this.switchTo(index);
+      setTimeout(() => {
+        this.setState({
+          switchDone: true,
+          fade: true,
+          prevIdx: index
+        });
+        this.transition = false;
+      }, settings.fadeTime || 0);
+    }
     render() {
+      const fade = settings.fadeTime ? 'fade' : '';
+      const fadeClass = this.state.fade ? `${fade} fadeIn` : `${fade} fadeOut`;
       return (
         <TabsWrapper
-          className={settings.mainClass}
+          className={`${fadeClass} ${settings.mainClass}`}
           index={this.state.index}
+          prevIdx={this.state.prevIdx}
+          switchDone={this.state.switchDone}
           handleClick={this.handleClick}
         />
       );
@@ -37,7 +60,7 @@ const withTabs = (TabsWrapper, settings) => {
   }
 };
 
-// Put togethermain component here
+// Constructs main component
 const Tabs = (props) => {
   const settings = {...DEFAULTS, ...props.settings};
 
@@ -52,10 +75,13 @@ const Tabs = (props) => {
     });
     const Panels = React.cloneElement(props.children[1], {
       index: p.index,
+      switchDone: p.switchDone,
+      prevIdx: p.prevIdx,
       settings
     });
-    const wrapperClass = `wrapper ${settings.contentWrap
-        && 'content-wrap'} ${settings.bottomNav && 'bottom-nav'}`;
+    const contentWrap = settings.contentWrap ? 'content-wrap' : '';
+    const bottomNav = settings.bottomNav ? 'bottom-nav' : '';
+    const wrapperClass = `wrapper ${contentWrap} ${bottomNav}`;
     return (
       <div className={classes} style={styles}>
         <div className={wrapperClass}>{Nav}{Panels}</div>
@@ -70,24 +96,25 @@ Tabs.propTypes = {
   settings: PropTypes.object
 };
 
-// DOC: custom attributes get inherited
 const createSection = (sectionName) =>
   (props) => {
-    const {handleClick, index, className, settings, ...other} = props;
-
+    const {handleClick, children, index, prevIdx, switchDone, className, settings, ...other} = props;
     // create each element/child of the section (Nav or Content)
     return (
       <div className={`${sectionName} ${className || ''}`} {...other}>
-      {React.Children.map(props.children, (child, i) => {
-        console.log('i: ', i, 'props.index:', props.index);
-        const active = i === props.index ? 'active' : '';
+      {React.Children.map(children, (child, i) => {
+        let active = '';
+        if (i === index && (switchDone || (sectionName === 'tab-nav')) ||
+           (i === prevIdx && sectionName === 'tab-panel')) {
+          active = 'active';
+        }
         const style = active ? {color: settings.color, background: settings.bgColor} : {};
-        const handleClick = props.handleClick ? props.handleClick.bind(null, i) : null;
+        const handle = handleClick ? handleClick.bind(null, i) : null;
         return React.cloneElement(child, {
           key: i,
           className: `${sectionName}-item ${active} ${child.props.className || ''}`,
-          onClick: handleClick,
-          style,
+          onClick: handle,
+          style
         })
       })}
       </div>

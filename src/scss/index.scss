@@ -36,6 +36,7 @@
   .tab-nav {
     position: relative;
     top: 1px;
+    z-index: 1;
   }
 
   .tab-nav-item {
@@ -56,7 +57,9 @@
   }
 
   .tab-panel {
+    position: relative;
     border-top: 1px solid #BBB;
+    z-index: 0;
   }
 
   .bottom-nav {
@@ -80,10 +83,36 @@
 
   .tab-panel-item {
     display: none;
-    padding: 10px;
     overflow: hidden;
+    padding: 10px;
     &.active {
       display: block;
+    }
+  }
+
+  &.fade {
+    .tab-panel-item {
+      -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      -o-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+      opacity: 0;
+      display: block;
+      position: absolute;
+    }
+
+    &.fadeOut {
+      .tab-panel-item.active {
+        position: relative;
+        opacity: 0;
+      }
+    }
+
+    &.fadeIn {
+      .tab-panel-item.active {
+        position: relative;
+        opacity: 1;
+      }
     }
   }
 
