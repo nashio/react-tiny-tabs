@@ -58,7 +58,7 @@ const TabsDemo2 = () => (
       <div>An office worker android arrives at a base station to do computer work. As he attempts to make friends  with people in the office workplace, he is rejected and shunned because he is a robot. </div>
       <div className="your-class">The following day, Johns son asks him to merge his consciousness in order for John to assist him</div>
       <div>
-        <p>The following is a tab component inside of a tab</p>
+        <p>You can also nest Tab Components inside other Tabs</p>
         <TabsDemo3 />
       </div>
     </Content>
@@ -103,7 +103,7 @@ const TabsDemo4 = () => (
 
 // Double line in the title demo
 const TabsDemo5 = () => (
-  <Tabs className="theme-two-rows" settings={{contentWrap: true}}>
+  <Tabs className="two-rows" settings={{contentWrap: true}}>
     <Nav>
       <div><span>Planet Mercury</span><sub>smallest planet</sub></div>
       <div><span>Planet Venus</span><sub>hottest planet</sub></div>
@@ -148,24 +148,48 @@ const TabsDemo6 = () => (
 
 ReactDOM.render(
   <div>
-    <p className="intro">Easy to use React tab component that lets you choose from 3 themes, customize colors for text and background, use double lines in the title, wrap bottom content to match the nav width, nest tabs inside other tabs, define transition speed or use the navigation in the bottom</p>
-    <h3>Default Theme</h3>
-    <h4><span>settings: {'{fadeTime: 250, index: 0}'}</span></h4>
+    <p className="intro">An easy to use React tab component with several options to modify the skin.</p>
+    <h2>Examples:</h2>
+    <h4>Default Theme</h4>
+    <pre>{`
+      settings: {
+        fadeTime: 250,
+        index: 0
+      }
+      `}</pre>
     <TabsDemo1 />
-    <h3>Use alternate themes to customize skin</h3>
-    <h4><span>class="folder-theme"</span></h4>
-    <h4><span>settings: {'{index: 0, bgColor: \'lightPink\', color: \'#333\'}'}</span></h4>
+    <h4>folder-theme</h4>
+    <pre>{`
+      settings: {
+        bgColor: 'lightPink',
+        color: '#333'
+      }
+    `}</pre>
     <TabsDemo4 />
-    <h3>Title and subtitle </h3>
-    <h4><span>class="two-rows-theme"</span></h4>
-    <h4><span>settings: {'{contentWrap: true}'} // Wrap content to nav width</span></h4>
+    <h4>class="two-rows box-theme"</h4>
+    <pre>{`
+      settings: {
+        contentWrap: true
+      }
+    `}</pre>
     <TabsDemo5 />
-    <h3>Nest tab components</h3>
-    <h4><span>class="box-theme"</span></h4>
-    <h4><span>settings: {'{index: 2, contentWrap: true}'}</span></h4>
+    <h4>box-theme</h4>
+    <pre>{`
+      settings: {
+        index: 2,
+        contentWrap: true
+      }
+    `}</pre>
     <TabsDemo2 />
-    <h3>Bottom Navigation</h3>
-    <h4><span>{'{bottomNav: true, bgColor: \'black\', color: \'white\', contentWrap: true}'}</span></h4>
+    <h4>Bottom Navigation</h4>
+    <pre>{`
+      settings: {
+        bottomNav: true,
+        bgColor: 'black',
+        color: 'white',
+        contentWrap: true
+      }
+    `}</pre>
     <TabsDemo6 />
     <div className="footer"></div>
   </div>,

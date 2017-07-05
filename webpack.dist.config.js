@@ -1,6 +1,10 @@
 var webpack = require('webpack');
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+
+// Exclude react from bundle
 var reactExternal = {
   root: 'React',
   commonjs2: 'react',
@@ -17,8 +21,8 @@ var reactDOMExternal = {
 module.exports = {
 
   entry: {
-    'react-modal': './lib/index.js',
-    'react-modal.min': './lib/index.js'
+    'react-tiny-tabs': './src/index.js',
+    'react-tiny-tabs.min': './src/index.js'
   },
 
   externals: {
@@ -29,10 +33,10 @@ module.exports = {
   output: {
     filename: '[name].js',
     chunkFilename: '[id].chunk.js',
-    path: 'dist',
-    publicPath: '/',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: path.resolve(__dirname, 'public'),
     libraryTarget: 'umd',
-    library: 'ReactModal'
+    library: 'ReactTinyTabs'
   },
 
   plugins: [
@@ -45,13 +49,22 @@ module.exports = {
       compress: {
         warnings: false
       }
-    })
+    }),
+      new ExtractTextPlugin('index.css')
   ],
 
   module: {
     loaders: [
-      { test: /\.js?$/, exclude: /node_modules/, loader: 'babel'}
-    ]
+      { test: /\.js?$/, exclude: /node_modules/, loader: 'babel-loader'},
+      { test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader!sass-loader',
+        })
+      }
+
+    ],
+
   }
 
 };

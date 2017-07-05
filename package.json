@@ -22,10 +22,8 @@
     "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
   },
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --inline --host 0.0.0.0 --content-base examples/",
-    "build": "npm run build-js && npm run build-css",
-    "build-css": "node-sass src/scss -o dist/css",
-    "build-js": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+    "start" : "webpack-dev-server --host 0.0.0.0 --port 8888 --inline --hot --content-base examples/",
+    "build": "node_modules/.bin/webpack --config webpack.dist.config.js",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
     "testonly": "mocha $npm_package_options_mocha",
@@ -47,6 +45,7 @@
     "eslint": "^3.19.0",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-react": "^6.10.3",
+    "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.1",
     "image-webpack-loader": "^3.3.0",
     "jsdom": "^10.0.0",
@@ -62,7 +61,8 @@
     "sinon": "^2.1.0",
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.8",
-    "webpack": "^2.4.1"
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0"
   },
   "peerDependencies": {
     "react": "~0.15.0 || ^15.5.4",
@@ -70,6 +70,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.8",
+    "webpack": "^2.6.1"
   }
 }

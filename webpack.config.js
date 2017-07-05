@@ -21,7 +21,6 @@ function buildEntries() {
     return entries;
   }, {});
 }
-
 module.exports = {
 
   entry: buildEntries(),
@@ -29,7 +28,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     chunkFilename: '[id].chunk.js',
-    path: 'examples/__build__',
+    path: path.resolve(__dirname, '/examples/__build__'),
     publicPath: '/__build__/'
   },
 
@@ -48,6 +47,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
+        exclude: /node_modules/,
         use: [{ loader: 'style-loader' // creates style nodes from JS strings
         }, { loader: 'css-loader' // translates CSS into CommonJS
         }, { loader: 'sass-loader' // compiles Sass to CSS

@@ -32,6 +32,10 @@ header .sub-title {
   margin: auto;
 }
 
+pre {
+  margin-left: 0;
+}
+
 h1 {
   font-size: 27px;
   margin: 5px 0;
@@ -44,17 +48,15 @@ h2 {
 
 h3 {
   font-size: 19px;
-  margin: 40px 0 0 0;
+  margin: 40px 0 20px 0;
   color: #333;
 }
 
 h4 {
-  margin: 10px 0 20px 0;
-  color: #888;
-}
-
-h4 span {
+  font-size: 17px;
   font-family: "Courier New", Courier, monospace;
+  margin: 20px 0 10px;
+  color: #888;
 }
 
 p.intro {

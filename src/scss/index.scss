@@ -1,3 +1,7 @@
+body {
+  font-family: Helvetica, Arial, Verdana;
+}
+
 .tabs-container {
   display: block;
   margin-bottom: 20px;
@@ -5,6 +9,7 @@
   color: #444;
 
   .wrapper {
+    overflow: hidden;
     /* contain the panel to the size of the nav */
     &.content-wrap {
       display: table;
@@ -228,7 +233,7 @@ $theme2: #FFFFFF;
 
 /* Theme two rows */
 $theme2: #FFFFFF;
-.tabs-container.theme-two-rows>.wrapper {
+.tabs-container.two-rows>.wrapper {
   &>.tab-nav {
     .tab-nav-item {
       border: 1px solid #BBB;
