@@ -17,10 +17,6 @@ header .sub-title {
   font-weight: bold;
 }
 
-.footer {
-  margin-top: 100px;
-}
-
 .logo {
   width: 150px;
   display: block;
@@ -47,16 +43,16 @@ h2 {
 }
 
 h3 {
-  font-size: 19px;
-  margin: 40px 0 20px 0;
+  font-size: 20px;
+  margin: 20px 0;
   color: #333;
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Courier New", Courier, monospace;
-  margin: 20px 0 10px;
-  color: #888;
+  margin: 50px 0 10px;
+  color: #333;
 }
 
 p.intro {
@@ -67,10 +63,25 @@ p.intro {
   padding: 15px;
   border-radius: 5px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+
+iframe {
+  border: 0;
+}
+
+.github {
+  float: right;
+  margin-bottom: 50px;
+}
+
+footer {
+  display: block;
+  margin: 100px 0;
 }
 
 .tabs-container:first-child .tab-nav .active {
     /* background: beige; */
   }
 }
+

@@ -6,7 +6,7 @@ body {
   display: block;
   margin-bottom: 20px;
   line-height: 21px;
-  color: #444;
+  color: #999;
 
   .wrapper {
     overflow: hidden;
@@ -236,38 +236,15 @@ $theme2: #FFFFFF;
 .tabs-container.two-rows>.wrapper {
   &>.tab-nav {
     .tab-nav-item {
-      border: 1px solid #BBB;
-      border-bottom: none;
-      border-left-color: transparent;
-      border-radius: 0;
-      background: #CCC;
-      color: white;
-      position: relative;
-      top: 1px;
-      line-height: 13px;
+      line-height: 15px;
 
       sub {
         display: block;
-        font-size: 10px;
+        font-size: 75%;
       }
 
-      &.active {
-        background-color: $theme2;
-        color: #333;
-        border-bottom: 1px solid white;
-        border-top: 3px solid red;
-        border-left-color: #BBB;
-      }
-
-      &:first-child {
-        border-left: 1px solid #BBB;
-      }
     }
   }
 
-  &>.tab-panel {
-    background: $theme2;
-    border: 1px solid #BBB;
-  }
 }
 

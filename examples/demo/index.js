@@ -103,7 +103,7 @@ const TabsDemo4 = () => (
 
 // Double line in the title demo
 const TabsDemo5 = () => (
-  <Tabs className="two-rows" settings={{contentWrap: true}}>
+  <Tabs className="two-rows theme-box" settings={{contentWrap: true}}>
     <Nav>
       <div><span>Planet Mercury</span><sub>smallest planet</sub></div>
       <div><span>Planet Venus</span><sub>hottest planet</sub></div>
@@ -145,10 +145,24 @@ const TabsDemo6 = () => (
     </Content>
   </Tabs>);
 
+const Header = () => (
+  <div className="github">
+    <iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=react-tiny-tabs&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px">
+    </iframe>
+  </div>
+);
+const Footer = () => (
+  <footer>
+    <h2>License</h2>
+    <h3>MIT</h3>
+    <a href="https://github.com/nashio/react-tiny-tabs/">Github</a>&nbsp;/&nbsp;v.0.1.0
+  </footer>
+);
 
 ReactDOM.render(
   <div>
-    <p className="intro">An easy to use React tab component with several options to modify the skin.</p>
+    <p className="intro">Easy to use Tab Component for React with basic options to skin and change layout.</p>
+    <Header></Header>
     <h2>Examples:</h2>
     <h4>Default Theme</h4>
     <pre>{`
@@ -166,14 +180,14 @@ ReactDOM.render(
       }
     `}</pre>
     <TabsDemo4 />
-    <h4>class="two-rows box-theme"</h4>
+    <h4>box-theme, using .two-rows</h4>
     <pre>{`
       settings: {
         contentWrap: true
       }
     `}</pre>
     <TabsDemo5 />
-    <h4>box-theme</h4>
+    <h4>Nesting components</h4>
     <pre>{`
       settings: {
         index: 2,
@@ -191,7 +205,7 @@ ReactDOM.render(
       }
     `}</pre>
     <TabsDemo6 />
-    <div className="footer"></div>
+    <Footer></Footer>
   </div>,
   document.getElementById('root')
 );

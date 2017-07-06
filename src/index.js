@@ -6,7 +6,10 @@ const DEFAULTS  = {
   index: 0,
   mainClass: 'tabs-container',
   contentWrap: false,
-  bottomNav: false
+  bottomNav: false,
+  color: '#555555',
+  colorNoFocus: 'darkGray',
+  bgColor: 'white'
 };
 
 // Handle state here
@@ -108,7 +111,9 @@ const createSection = (sectionName) =>
            (i === prevIdx && sectionName === 'tab-panel')) {
           active = 'active';
         }
-        const style = active ? {color: settings.color, background: settings.bgColor} : {};
+        const {color, bgColor, borderTopColor} = settings;
+        console.log('className: ', className  );
+        const style = active ? {color, background: bgColor, borderTopColor} : {};
         const handle = handleClick ? handleClick.bind(null, i) : null;
         return React.cloneElement(child, {
           key: i,
