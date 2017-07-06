@@ -1,6 +1,4 @@
-# ract-tiny-tabs
-
-![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/logo.png)
+![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/logo-small.png)
 
 Easy to use React tab component
 * Choose from 3 themes
