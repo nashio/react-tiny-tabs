@@ -1,0 +1,87 @@
+body {
+  /* background: beige; */
+  font-family: Helvetica, Arial, Verdana;
+}
+
+header {
+  width: 300px;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+header .sub-title {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo {
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+pre {
+  margin-left: 0;
+}
+
+h1 {
+  font-size: 27px;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 5px 0 20px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #333;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 50px 0 10px;
+  color: #333;
+}
+
+p.intro {
+  line-height: 22px;
+  color: slategray;
+  background-color: #EEEEEE;
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+iframe {
+  border: 0;
+}
+
+.github {
+  float: right;
+  margin-bottom: 50px;
+}
+
+footer {
+  display: block;
+  margin: 100px 0;
+}
+
+.tabs-container:first-child .tab-nav .active {
+    /* background: beige; */
+  }
+}
+
