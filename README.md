@@ -16,7 +16,7 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
 ```
   import {Tabs, Nav, Content} from 'react-tiny-tabs';
   ...
-  <Tabs settings={bgColor: royalBlue, color: white}>
+  <Tabs className="theme-default" settings={bgColor: royalBlue, color: white}>
     <Nav>
       <div>First Tab</div>
       <div>Second Tab</div>
@@ -48,13 +48,13 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
 |index| Number | Initialize active tab index |
 
 ### Classes
-- Apply to <Tabs className="theme-x">
+- Apply to \<Tabs className="theme-x"\>
 #### Themes
 * .theme-default
 * .theme-box
 * .theme-folder
 #### Nav modifier
-* .two-rows  (add support for 2 lines in the tab navigation)
+* .two-rows (add support for 2 lines in the tab navigation)
 
 ### License
 
