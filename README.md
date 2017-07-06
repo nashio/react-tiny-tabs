@@ -38,6 +38,7 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
 ```
 
 ### Options
+
 | option  | type |  description |
 |---|---|---|
 |color| String | active tab text color |
@@ -45,6 +46,15 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
 |contentWrap| Boolean | active tab background color |
 |bottomNav| Boolean | active tab background color |
 |index| Number | Initialize active tab index |
+
+### Classes
+- Apply to <Tabs className="theme-x">
+#### Themes
+* .theme-default
+* .theme-box
+* .theme-folder
+#### Nav modifier
+* .two-rows  (add support for 2 lines in the tab navigation)
 
 ### License
 
