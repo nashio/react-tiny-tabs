@@ -50,7 +50,7 @@ module.exports = {
         warnings: false
       }
     }),
-      new ExtractTextPlugin('index.css')
+    new ExtractTextPlugin('index.css')
   ],
 
   module: {
