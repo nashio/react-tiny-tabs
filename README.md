@@ -1,14 +1,16 @@
 # ract-tiny-tabs
 
-Easy to use React tab component that lets you:
+Easy to use React tab component
 * Choose from 3 themes
-* Use double lines in the title
 * Define transition speed or use the navigation in the bottom
 * Nest tab components inside other tabs components
+* Customize the tab nav to use title and subtitle
 * Constrain content to match the nav width
 * Customize colors for text and background
 
+<br/>![](http://ignaciochavez.com/files/react-tiny-tabs/ract-tabs.png)
 
+### Demo
 See the live [DEMO:](nashio.github.com/tiny-tabs)
 
 ### Usage
@@ -41,20 +43,32 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
 
 | option  | type |  description |
 |---|---|---|
+|index| Number | Initialize active tab index |
 |color| String | active tab text color |
 |bgColor| String | active tab background color |
-|contentWrap| Boolean | active tab background color |
-|bottomNav| Boolean | active tab background color |
-|index| Number | Initialize active tab index |
+|contentWrap| Boolean | Restrains panel content to the width of the tabs nav |
+|bottomNav| Boolean | Uses the nav in the bottom |
+|fadeTime| Number | (ms) Adds fade transition when switching |
 
 ### Classes
-- Apply to \<Tabs className="theme-x"\>
+\<Tabs className="theme-x"\>
+
 #### Themes
 * .theme-default
 * .theme-box
 * .theme-folder
 #### Nav modifier
 * .two-rows (add support for 2 lines in the tab navigation)
+
+### Carry over html attributes
+Added custom html properties will be rendered in the resulting markup
+```
+  <Nav role="tablist" className="your-own-class">
+    <div role="tab" >First Tab</div>
+    <div role="tab">Second Tab</div>
+    <div role="tab">Third Tab</div>
+  </Nav>
+```
 
 ### License
 
