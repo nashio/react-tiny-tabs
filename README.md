@@ -1,5 +1,7 @@
 # ract-tiny-tabs
 
+![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/logo.png)
+
 Easy to use React tab component
 * Choose from 3 themes
 * Define transition speed or use the navigation in the bottom
@@ -8,12 +10,17 @@ Easy to use React tab component
 * Constrain content to match the nav width
 * Customize colors for text and background
 
-<br/>![](http://ignaciochavez.com/files/react-tiny-tabs/ract-tabs.png)
+<br/>![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/demo.jpg)
 
 ### Demo
 See the live [DEMO:](nashio.github.com/tiny-tabs)
 
-### Usage
+## Usage
+<!-- ### Install -->
+<!-- ``` -->
+<!-- npm install -D react-tiny-tabs -->
+<!-- ``` -->
+#### Include the Components
 
 ```
   import {Tabs, Nav, Content} from 'react-tiny-tabs';
@@ -37,6 +44,11 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
     </Content>
   </Tabs>);
 
+```
+
+#### Include the CSS
+```
+<link rel="stylesheet" href="node_modules/react-tiny-tabs/dist/index.css">
 ```
 
 ### Options
@@ -69,6 +81,19 @@ Added custom html properties will be rendered in the resulting markup
     <div role="tab">Third Tab</div>
   </Nav>
 ```
+
+### Files
+
+Code example
+#### [demo/index.html/](https://github.com/nashio/react-tiny-tabs/blob/master/examples/demo/index.html "code examples")
+
+Source file
+#### [src/](https://github.com/nashio/react-tiny-tabs/tree/master/src "source file")
+
+Build files
+#### [dist/](https://github.com/nashio/react-tiny-tabs/tree/master/dist "build files")
+
+
 
 ### License
 
