@@ -39,6 +39,7 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
 
 ### Options
 | option  | type |  description |
+|---|---|---|
 |color| String | active tab text color |
 |bgColor| String | active tab background color |
 |contentWrap| Boolean | active tab background color |
