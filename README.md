@@ -89,7 +89,7 @@ Code example
 #### [demo/index.js/](https://github.com/nashio/react-tiny-tabs/blob/master/examples/demo/index.js "code examples")
 
 Source file
-#### [src/](https://github.com/nashio/react-tiny-tabs/tree/master/src "source file")
+#### [src/](https://github.com/nashio/react-tiny-tabs/tree/master/src/index.js "source file")
 
 Build files
 #### [dist/](https://github.com/nashio/react-tiny-tabs/tree/master/dist "build files")
