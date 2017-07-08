@@ -10153,10 +10153,6 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-// import tuftedTitmouse from './assets/img/tuftedtitmouse.svg';
-// import blueBird from './assets/img/bluebird.svg';
-// import cardinal from './assets/img/cardinal.svg';
-// import greatTit from './assets/img/greattit.svg';
 
 var _react = __webpack_require__(50);
 
@@ -10171,22 +10167,6 @@ var _src = __webpack_require__(82);
 var _check = __webpack_require__(84);
 
 var _check2 = _interopRequireDefault(_check);
-
-var _tuftedtitmouse = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/tuftedtitmouse.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-var _tuftedtitmouse2 = _interopRequireDefault(_tuftedtitmouse);
-
-var _bluebird = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/bluebird.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-var _bluebird2 = _interopRequireDefault(_bluebird);
-
-var _cardinal = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/cardinal.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-var _cardinal2 = _interopRequireDefault(_cardinal);
-
-var _greattit = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/greattit.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-var _greattit2 = _interopRequireDefault(_greattit);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10232,7 +10212,7 @@ var TabsDemo1 = function TabsDemo1() {
       _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('img', { className: 'img-left', src: _cardinal2.default, alt: 'pic' }),
+        _react2.default.createElement('img', { className: 'img-left', src: 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/cardinal.svg', alt: 'pic' }),
         _react2.default.createElement(
           'p',
           null,
@@ -10242,7 +10222,7 @@ var TabsDemo1 = function TabsDemo1() {
       _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('img', { className: 'img-left', src: _tuftedtitmouse2.default, alt: 'pic' }),
+        _react2.default.createElement('img', { className: 'img-left', src: 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/tuftedtitmouse.svg', alt: 'pic' }),
         _react2.default.createElement(
           'p',
           null,
@@ -10252,7 +10232,7 @@ var TabsDemo1 = function TabsDemo1() {
       _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('img', { className: 'img-left', src: _bluebird2.default, alt: 'pic' }),
+        _react2.default.createElement('img', { className: 'img-left', src: 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/bluebird.svg', alt: 'pic' }),
         _react2.default.createElement(
           'p',
           null,
@@ -10262,7 +10242,7 @@ var TabsDemo1 = function TabsDemo1() {
       _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('img', { className: 'img-left', src: _greattit2.default, alt: 'pic' }),
+        _react2.default.createElement('img', { className: 'img-left', src: 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/greattit.svg', alt: 'pic' }),
         _react2.default.createElement(
           'p',
           null,
