@@ -1,7 +1,7 @@
 ![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/logo-small.png)
 
 Easy to use React tab component
-* Choose from 3 themes
+* 3 different looks/themes
 * Define transition speed or use the navigation in the bottom
 * Nest tab components inside other tabs components
 * Customize the tab nav to use title and subtitle
@@ -11,13 +11,17 @@ Easy to use React tab component
 <br/>![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/demo.jpg)
 
 ### Demo
-See the live [DEMO:](nashio.github.com/tiny-tabs)
+See the live [DEMO:](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)
 
 ## Usage
 <!-- ### Install -->
 <!-- ``` -->
 <!-- npm install -D react-tiny-tabs -->
 <!-- ``` -->
+#### Include the CSS
+```
+<link rel="stylesheet" href="node_modules/react-tiny-tabs/dist/index.css">
+```
 #### Include the Components
 
 ```
@@ -44,10 +48,6 @@ See the live [DEMO:](nashio.github.com/tiny-tabs)
 
 ```
 
-#### Include the CSS
-```
-<link rel="stylesheet" href="node_modules/react-tiny-tabs/dist/index.css">
-```
 
 ### Options
 
