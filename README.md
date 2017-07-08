@@ -74,7 +74,7 @@ See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page)
 * .two-rows (add support for 2 lines in the tab navigation)
 
 ### Carry over html attributes
-Added custom html properties will be rendered in the resulting markup
+Custom markup properties will be rendered in the resulting markup
 ```
   <Nav role="tablist" className="your-own-class">
     <div role="tab" >First Tab</div>
