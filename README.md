@@ -8,13 +8,13 @@ Easy to use React tab component
 * Constrain content to match the nav width
 * Customize colors for text and background
 
-[![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/demo.jpg)](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)
+[![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/demo.jpg)](http://nashio.github.io/react-tiny-tabs/examples/demo/page)
 <br/>
 
 
 
 ### Demo
-See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)
+See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page)
 
 ## Usage
 <!-- ### Install -->
