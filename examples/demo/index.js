@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import {Tabs, Nav, Content} from '../../src';
 
 import check from './assets/img/check.svg';
-import tuftedTitmouse from './assets/img/tufted-titmouse.svg';
-import blueBird from './assets/img/blue-bird.svg';
+import tuftedTitmouse from './assets/img/tuftedtitmouse.svg';
+import blueBird from './assets/img/bluebird.svg';
 import cardinal from './assets/img/cardinal.svg';
-import greatTit from './assets/img/great-tit.svg';
+import greatTit from './assets/img/greattit.svg';
 
 // override settings
 const settings = {
@@ -147,7 +147,7 @@ const TabsDemo6 = () => (
 
 const Header = () => (
   <div className="github">
-    <iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=react-tiny-tabs&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px">
+    <iframe src="https://ghbtns.com/github-btn.html?user=nashio&repo=react-tiny-tabs&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px">
     </iframe>
   </div>
 );

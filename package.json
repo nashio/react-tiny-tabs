@@ -22,7 +22,7 @@
     "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
   },
   "scripts": {
-    "start" : "webpack-dev-server --host 0.0.0.0 --port 8888 --inline --hot --content-base examples/",
+    "start": "webpack-dev-server --host 0.0.0.0 --port 8888 --inline --hot --content-base examples/",
     "build": "node_modules/.bin/webpack --config webpack.dist.config.js",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
@@ -41,6 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "chai": "^3.5.0",
+    "css-loader": "^0.28.4",
     "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "eslint-plugin-babel": "^4.1.1",
