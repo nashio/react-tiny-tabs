@@ -15,7 +15,10 @@ Easy to use React tab component
 
 ### Demo
 See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page)
-
+## Install
+```
+npm install react-tiny-tabs
+```
 ## Usage
 <!-- ### Install -->
 <!-- ``` -->
