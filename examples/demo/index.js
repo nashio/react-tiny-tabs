@@ -1,17 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Tabs, Nav, Content} from '../../src';
-
 import check from './assets/img/check.svg';
-// import tuftedTitmouse from './assets/img/tuftedtitmouse.svg';
-// import blueBird from './assets/img/bluebird.svg';
-// import cardinal from './assets/img/cardinal.svg';
-// import greatTit from './assets/img/greattit.svg';
-
-import tuftedTitmouse from 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/tuftedtitmouse.svg';
-import blueBird from 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/bluebird.svg';
-import cardinal from 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/cardinal.svg';
-import greatTit from 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/greattit.svg';
 
 // override settings
 const settings = {
@@ -31,19 +21,19 @@ const TabsDemo1 = () => (
     </Nav>
     <Content>
       <div>
-        <img className="img-left" src={cardinal} alt="pic" />
+        <img className="img-left" src="https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/cardinal.svg" alt="pic" />
         <p>Cardinals, in the family Cardinalidae, are passerine birds found in North and South America. They are also known as cardinal-grosbeaks and cardinal-buntings. The South American cardinals in the genus Paroaria are placed in another family, the Thraupidae (previously placed in Emberizidae).</p>
       </div>
       <div>
-        <img className="img-left" src={tuftedTitmouse} alt="pic" />
+        <img className="img-left" src="https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/tuftedtitmouse.svg" alt="pic" />
         <p>The tufted titmouse (Baeolophus bicolor) is a small songbird from North America, a species in the tit and chickadee family (Paridae). The black-crested titmouse, found from central and southern Texas southwards, was included as a subspecies but is now considered a separate species B. atricristatus.</p>
       </div>
       <div>
-        <img className="img-left" src={blueBird} alt="pic" />
+        <img className="img-left" src="https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/bluebird.svg" alt="pic" />
         <p>The bluebirds are a group of medium-sized, mostly insectivorous or omnivorous bird in the order of Passerines in the genus Sialia of the thrush family (Turdidae). Bluebirds are one of the few thrush genera in the Americas</p>
       </div>
       <div>
-        <img className="img-left" src={greatTit} alt="pic" />
+        <img className="img-left" src="https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/greattit.svg" alt="pic" />
         <p>The great tit (Parus major) is a passerine bird in the tit family Paridae. It is a widespread and common species throughout Europe, the Middle East, Central and Northern Asia, and parts of North Africa where it is generally resident in any sort of woodland;</p>
       </div>
     </Content>
