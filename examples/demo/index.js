@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import {Tabs, Nav, Content} from '../../src';
 
 import check from './assets/img/check.svg';
-import tuftedTitmouse from './assets/img/tuftedtitmouse.svg';
-import blueBird from './assets/img/bluebird.svg';
-import cardinal from './assets/img/cardinal.svg';
-import greatTit from './assets/img/greattit.svg';
+// import tuftedTitmouse from './assets/img/tuftedtitmouse.svg';
+// import blueBird from './assets/img/bluebird.svg';
+// import cardinal from './assets/img/cardinal.svg';
+// import greatTit from './assets/img/greattit.svg';
+
+import tuftedTitmouse from 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/tuftedtitmouse.svg';
+import blueBird from 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/bluebird.svg';
+import cardinal from 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/cardinal.svg';
+import greatTit from 'https://rawgit.com/nashio/react-tiny-tabs/demo-page/examples/demo/page/assets/img/greattit.svg';
 
 // override settings
 const settings = {
