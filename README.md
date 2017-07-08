@@ -31,25 +31,24 @@ See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page)
   import {Tabs, Nav, Content} from 'react-tiny-tabs';
   ...
  
-    <Tabs className="theme-default" settings={bgColor: royalBlue, color: white}>
-      <Nav>
-        <div>First Tab</div>
-        <div>Second Tab</div>
-        <div>Third Tab</div>
-      </Nav>
-      <Content>
-        <div>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
-        </div>
-        <div>
-          <p>Magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-        </div>
-        <div>
-          <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-        </div>
-      </Content>
-    </Tabs>
-
+  <Tabs className="theme-default" settings={bgColor: royalBlue, color: white}>
+    <Nav>
+      <div>First Tab</div>
+      <div>Second Tab</div>
+      <div>Third Tab</div>
+    </Nav>
+    <Content>
+      <div>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+      <div>
+        <p>Magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+      </div>
+      <div>
+        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+      </div>
+    </Content>
+  </Tabs>
 
 ```
 
