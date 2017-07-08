@@ -1,7 +1,7 @@
 {
   "name": "react-tiny-tabs",
   "version": "0.1.0",
-  "description": "A React component for creating tabs",
+  "description": "A React component for creating colorful tabs",
   "repository": {
     "type": "git",
     "url": "https://github.com/nashio/tiny-tabs.git"
@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/nashio/tiny-tabs/issues"
   },
-  "homepage": "http://nashio.github.io/tiny-tabs/",
+  "homepage": "http://nashio.github.io/react-tiny-tabs/examples/demo/page//",
   "keywords": [
     "react-component",
     "react",
