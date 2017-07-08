@@ -8,13 +8,13 @@ Easy to use React tab component
 * Constrain content to match the nav width
 * Customize colors for text and background
 
-[![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/demo.jpg)](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)
+[![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/demo.jpg)](http://nashio.github.io/react-tiny-tabs/examples/demo/page)
 <br/>
 
 
 
 ### Demo
-See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)
+See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page)
 
 ## Usage
 <!-- ### Install -->
@@ -25,11 +25,12 @@ See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page/i
 ```
 <link rel="stylesheet" href="node_modules/react-tiny-tabs/dist/index.css">
 ```
-#### Define the Components
+#### Import and define the components
 
 ```
   import {Tabs, Nav, Content} from 'react-tiny-tabs';
   ...
+ 
   <Tabs className="theme-default" settings={bgColor: royalBlue, color: white}>
     <Nav>
       <div>First Tab</div>
@@ -47,7 +48,7 @@ See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page/i
         <p>Duis aute irure dolor in reprehenderit in voluptate</p>
       </div>
     </Content>
-  </Tabs>);
+  </Tabs>
 
 ```
 
@@ -74,7 +75,7 @@ See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page/i
 * .two-rows (add support for 2 lines in the tab navigation)
 
 ### Carry over html attributes
-Added custom html properties will be rendered in the resulting markup
+Custom markup properties will be rendered in the resulting markup (good for aria roles, etc)
 ```
   <Nav role="tablist" className="your-own-class">
     <div role="tab" >First Tab</div>
