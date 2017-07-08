@@ -8,13 +8,13 @@ Easy to use React tab component
 * Constrain content to match the nav width
 * Customize colors for text and background
 
-[![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/demo.jpg)](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)  
+[![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/demo.jpg)](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)
 <br/>
 
 
 
 ### Demo
-See the live [DEMO:](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)
+See the live [DEMO](http://nashio.github.io/react-tiny-tabs/examples/demo/page/index.html)
 
 ## Usage
 <!-- ### Install -->
@@ -25,7 +25,7 @@ See the live [DEMO:](http://nashio.github.io/react-tiny-tabs/examples/demo/page/
 ```
 <link rel="stylesheet" href="node_modules/react-tiny-tabs/dist/index.css">
 ```
-#### Include the Components
+#### Define the Components
 
 ```
   import {Tabs, Nav, Content} from 'react-tiny-tabs';
@@ -86,7 +86,7 @@ Added custom html properties will be rendered in the resulting markup
 ### Files
 
 Code example
-#### [demo/index.html/](https://github.com/nashio/react-tiny-tabs/blob/master/examples/demo/index.html "code examples")
+#### [demo/index.js/](https://github.com/nashio/react-tiny-tabs/blob/master/examples/demo/index.js "code examples")
 
 Source file
 #### [src/](https://github.com/nashio/react-tiny-tabs/tree/master/src "source file")
