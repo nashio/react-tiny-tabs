@@ -6,3 +6,5 @@
 .idea
 npm-debug.log
 node_modules
+examples/__build__
+
