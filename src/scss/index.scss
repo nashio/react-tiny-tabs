@@ -15,16 +15,16 @@ body {
       display: table;
       .tab-nav {
         white-space: nowrap;
-        display: table-caption;
-        caption-side: top;
+        // display: table-caption;
+        // caption-side: top;
 
         .tab-nav-item {
           display: inline-table;
         }
       }
-      .tab-panel {
-        // display: table-caption;
-        // caption-side: bottom;
+      &>.tab-panel {
+        display: table-caption;
+        caption-side: bottom;
       }
     }
 
@@ -228,6 +228,7 @@ $theme2: #FFFFFF;
   &>.tab-panel {
     background: $theme2;
     border: 1px solid #BBB;
+    border-top: none;
   }
 }
 
