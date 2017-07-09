@@ -499,6 +499,7 @@ var createSection = function createSection(sectionName) {
             bgColor = settings.bgColor,
             borderTopColor = settings.borderTopColor;
 
+        console.log('className: ', className);
         var style = active ? { color: color, background: bgColor, borderTopColor: borderTopColor } : {};
         var handle = handleClick ? handleClick.bind(null, i) : null;
         return _react2.default.cloneElement(child, {
