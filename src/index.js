@@ -112,7 +112,6 @@ const createSection = (sectionName) =>
           active = 'active';
         }
         const {color, bgColor, borderTopColor} = settings;
-        console.log('className: ', className  );
         const style = active ? {color, background: bgColor, borderTopColor} : {};
         const handle = handleClick ? handleClick.bind(null, i) : null;
         return React.cloneElement(child, {
