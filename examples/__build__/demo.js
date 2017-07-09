@@ -10108,7 +10108,6 @@ var createSection = function createSection(sectionName) {
             bgColor = settings.bgColor,
             borderTopColor = settings.borderTopColor;
 
-        console.log('className: ', className);
         var style = active ? { color: color, background: bgColor, borderTopColor: borderTopColor } : {};
         var handle = handleClick ? handleClick.bind(null, i) : null;
         return _react2.default.cloneElement(child, {
@@ -10639,7 +10638,7 @@ var Footer = function Footer() {
       { href: 'https://github.com/nashio/react-tiny-tabs/' },
       'Github'
     ),
-    '\xA0/\xA0v.0.1.0'
+    '\xA0/\xA0v.0.1.1'
   );
 };
 
