@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/Users/ignacio/exp/react-tiny-tabs/public";
+/******/ 	__webpack_require__.p = "/Users/yushido/exp/github/tiny-tabs/public";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 7);
@@ -499,7 +499,6 @@ var createSection = function createSection(sectionName) {
             bgColor = settings.bgColor,
             borderTopColor = settings.borderTopColor;
 
-        console.log('className: ', className);
         var style = active ? { color: color, background: bgColor, borderTopColor: borderTopColor } : {};
         var handle = handleClick ? handleClick.bind(null, i) : null;
         return _react2.default.cloneElement(child, {

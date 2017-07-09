@@ -17,9 +17,6 @@ body {
         caption-side: top; }
         .tabs-container .wrapper.content-wrap .tab-nav .tab-nav-item {
           display: inline-table; }
-      .tabs-container .wrapper.content-wrap .tab-panel {
-        display: table-caption;
-        caption-side: bottom; }
     .tabs-container .wrapper.bottom-nav .tab-nav {
       caption-side: bottom; }
     .tabs-container .wrapper.bottom-nav .tab-panel {
