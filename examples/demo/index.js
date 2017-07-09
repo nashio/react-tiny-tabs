@@ -150,7 +150,7 @@ const Footer = () => (
   <footer>
     <h2>License</h2>
     <h3>MIT</h3>
-    <a href="https://github.com/nashio/react-tiny-tabs/">Github</a>&nbsp;/&nbsp;v.0.1.0
+    <a href="https://github.com/nashio/react-tiny-tabs/">Github</a>&nbsp;/&nbsp;v.0.1.1
   </footer>
 );
 
