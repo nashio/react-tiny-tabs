@@ -77,7 +77,7 @@ npm install react-tiny-tabs
 #### Nav modifier
 * .two-rows (add support for 2 lines in the tab navigation)
 
-### Carry over html attributes
+### Carry-over html attributes
 Custom markup properties will be rendered in the resulting markup (good for aria roles, etc)
 ```
   <Nav role="tablist" className="your-own-class">
