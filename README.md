@@ -1,3 +1,5 @@
+![https://github.com/nashio/react-tiny-tabs/releases](https://img.shields.io/github/tag/nashio/react-tiny-tabs.svg)  
+  
 ![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/logo-small.png)
 
 Easy to use React tab component
