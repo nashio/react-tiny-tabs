@@ -1,6 +1,4 @@
-![https://github.com/nashio/react-tiny-tabs/releases](https://img.shields.io/github/tag/nashio/react-tiny-tabs.svg)  
-  
-![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/logo-small.png)
+![](http://nashio.github.io/react-tiny-tabs/examples/demo/assets/img/logo-small.png)  
 
 Easy to use React tab component
 * 3 different looks/themes
@@ -12,7 +10,7 @@ Easy to use React tab component
 
 [![](https://ignaciochavez.com/files/react-tabs/react-tabs.gif)](http://nashio.github.io/react-tiny-tabs/examples/demo/page)
 <br/>
-
+![https://www.npmjs.com/package/react-tiny-tabs](https://img.shields.io/npm/v/react-tiny-tabs.svg)
 
 
 ### Demo
